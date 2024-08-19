@@ -49,6 +49,17 @@ where num_ratings < 100 and num_ratings > 30
 order by average_rating DESC;
 
 
+-- 7. Do the number of pages correlate with the Average Rating of the book?
 
--- 
+SELECT num_pages as "Number of Pages", avg(average_rating) as "Average Rating"
+FROM Books JOIN Formats ON Books.format_id = Formats.format_id
+GROUP BY num_pages
+ORDER BY "Average Rating" DESC;
+
+-- 8. Which books have the highest average rating?
+
+SELECT book_title, average_rating
+FROM Books
+WHERE num_ratings > 300
+ORDER BY average_rating DESC;
 
