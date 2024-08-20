@@ -1,0 +1,39 @@
+,book_format,count(book_format)
+0,Paperback,886
+1,Hardcover,752
+2,Mass Market Paperback,530
+3,Kindle Edition,490
+4,ebook,214
+5,,54
+6,Library Binding,27
+7,Audio CD,18
+8,Unknown Binding,14
+9,Nook,13
+10,Board book,12
+11,Audiobook,9
+12,Trade Paperback,8
+13,Audio Cassette,7
+14,Leather Bound,6
+15,Audible Audio,4
+16,MP3 CD,4
+17,Pocket Book,4
+18,Comics,3
+19,Webnovel,3
+20,Perfect Paperback,3
+21,Slipcased Hardcover,3
+22,paper,2
+23,Hardback,2
+24,cloth,1
+25,Diary,1
+26,Blue Pew Edition,1
+27,Comic,1
+28,Mass Market Paberback,1
+29,Brochura,1
+30,Podiobook,1
+31,softcover,1
+32,A 5,1
+33,Novel,1
+34,web,1
+35,Paperback Shinsho,1
+36,School & Library Binding,1
+37,Boxed Set - Hardcover,1
