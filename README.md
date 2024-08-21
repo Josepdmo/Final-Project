@@ -90,7 +90,7 @@ In this section, we delve directly into the analysis results gathered from our d
 
 ### 1. Books with the Highest Number of 5-Star Reviews
 
-![Top 10 Books with Most 5-Star Reviews](https:///Users/pepdemartiolius/Documents/GitHub/Final-Project/Graphs Python/output.png)
+![Top 10 Books with Most 5-Star Reviews](https://output.png)
 
 📚 **Insight:**
 The data reveals that *Harry Potter and the Sorcerer’s Stone* by J.K. Rowling and *The Hunger Games* by Suzanne Collins are among the books with the highest number of 5-star reviews. These books have a substantial fan base, evident from the millions of 5-star reviews.
