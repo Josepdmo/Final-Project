@@ -1,0 +1,3564 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='best_authors' inline='true' name='federated.14zte2j0vvqm9x1amc8mn0xui8sj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='best_authors' name='textscan.1n2z43p1pxrb0h12tdabr03xi10h'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='best_authors.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1n2z43p1pxrb0h12tdabr03xi10h' name='best_authors.csv' table='[best_authors#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='author' ordinal='1' />
+            <column datatype='integer' name='Number of Books rated' ordinal='2' />
+            <column datatype='real' name='Average_Rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1n2z43p1pxrb0h12tdabr03xi10h' name='best_authors.csv' table='[best_authors#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='author' ordinal='1' />
+            <column datatype='integer' name='Number of Books rated' ordinal='2' />
+            <column datatype='real' name='Average_Rating' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[best_authors.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[best_authors.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[best_authors.csv]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Books rated</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Books rated]</local-name>
+            <parent-name>[best_authors.csv]</parent-name>
+            <remote-alias>Number of Books rated</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average_Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average_Rating]</local-name>
+            <parent-name>[best_authors.csv]</parent-name>
+            <remote-alias>Average_Rating</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='best_authors.csv' datatype='table' name='[__tableau_internal_object_id__].[best_authors.csv_75A5559821E9435088140012065D73D8]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0b1kuf01fq8qyj0zuxv4i077brko.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:40:39 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>best_authors.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>1</ordinal>
+              <family>best_authors.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Books rated</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Books rated]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Books rated</remote-alias>
+              <ordinal>2</ordinal>
+              <family>best_authors.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average_Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average_Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average_Rating</remote-alias>
+              <ordinal>3</ordinal>
+              <family>best_authors.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>103</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_authors.csv_75A5559821E9435088140012065D73D8]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='best_authors.csv' id='best_authors.csv_75A5559821E9435088140012065D73D8'>
+            <properties context=''>
+              <relation connection='textscan.1n2z43p1pxrb0h12tdabr03xi10h' name='best_authors.csv' table='[best_authors#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='author' ordinal='1' />
+                  <column datatype='integer' name='Number of Books rated' ordinal='2' />
+                  <column datatype='real' name='Average_Rating' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='best_formats' inline='true' name='federated.17n8d2b1db6ypy1e4p54l14cpwsx' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='best_formats' name='textscan.0nqj4bi1fsjo9r16yfc8l1008jlc'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='best_formats.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0nqj4bi1fsjo9r16yfc8l1008jlc' name='best_formats.csv' table='[best_formats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_format' ordinal='1' />
+            <column datatype='integer' name='count(book_format)' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0nqj4bi1fsjo9r16yfc8l1008jlc' name='best_formats.csv' table='[best_formats#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_format' ordinal='1' />
+            <column datatype='integer' name='count(book_format)' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[best_formats.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[best_formats.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>book_format</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[book_format]</local-name>
+            <parent-name>[best_formats.csv]</parent-name>
+            <remote-alias>book_format</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>count(book_format)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[count(book_format)]</local-name>
+            <parent-name>[best_formats.csv]</parent-name>
+            <remote-alias>count(book_format)</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='best_formats.csv' datatype='table' name='[__tableau_internal_object_id__].[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0r9hrll0ped96k14wxzbj1nnf71q.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:41:01 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>best_formats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>book_format</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[book_format]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>book_format</remote-alias>
+              <ordinal>1</ordinal>
+              <family>best_formats.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>38</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>count(book_format)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[count(book_format)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>count(book_format)</remote-alias>
+              <ordinal>2</ordinal>
+              <family>best_formats.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>19</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_formats.csv_D3595A5879D44A34B416CC3804A5F584]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='best_formats.csv' id='best_formats.csv_D3595A5879D44A34B416CC3804A5F584'>
+            <properties context=''>
+              <relation connection='textscan.0nqj4bi1fsjo9r16yfc8l1008jlc' name='best_formats.csv' table='[best_formats#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='book_format' ordinal='1' />
+                  <column datatype='integer' name='count(book_format)' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='best_genres_clean' inline='true' name='federated.08eg31g1xh7kgc13bjqhf1t6ytwr' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='best_genres_clean' name='textscan.0yk9egc0qunkv91104ap30l8ixy7'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='best_genres_clean.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0yk9egc0qunkv91104ap30l8ixy7' name='best_genres_clean.csv' table='[best_genres_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Genre' ordinal='1' />
+            <column datatype='real' name='Avg_Rating' ordinal='2' />
+            <column datatype='integer' name='Count' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0yk9egc0qunkv91104ap30l8ixy7' name='best_genres_clean.csv' table='[best_genres_clean#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='Genre' ordinal='1' />
+            <column datatype='real' name='Avg_Rating' ordinal='2' />
+            <column datatype='integer' name='Count' ordinal='3' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[best_genres_clean.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[best_genres_clean.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Genre</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Genre]</local-name>
+            <parent-name>[best_genres_clean.csv]</parent-name>
+            <remote-alias>Genre</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Avg_Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Avg_Rating]</local-name>
+            <parent-name>[best_genres_clean.csv]</parent-name>
+            <remote-alias>Avg_Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Count</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Count]</local-name>
+            <parent-name>[best_genres_clean.csv]</parent-name>
+            <remote-alias>Count</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Avg Rating' datatype='real' name='[Avg_Rating]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='best_genres_clean.csv' datatype='table' name='[__tableau_internal_object_id__].[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]' role='measure' type='quantitative' />
+      <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0obb37l0d7n8el13ixhbt02qrbjx.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:41:30 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>best_genres_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Genre</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Genre]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Genre</remote-alias>
+              <ordinal>1</ordinal>
+              <family>best_genres_clean.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Avg_Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Avg_Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Avg_Rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>best_genres_clean.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Count</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Count]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Count</remote-alias>
+              <ordinal>3</ordinal>
+              <family>best_genres_clean.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Genre:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Adventure&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Fantasy&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;History&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;Adult&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Audiobook&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Young Adult&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Biography&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Childrens&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Nonfiction&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Historical&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='best_genres_clean.csv' id='best_genres_clean.csv_2C0877FFF8B546F8BDE366BAD1658FBB'>
+            <properties context=''>
+              <relation connection='textscan.0yk9egc0qunkv91104ap30l8ixy7' name='best_genres_clean.csv' table='[best_genres_clean#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='Genre' ordinal='1' />
+                  <column datatype='real' name='Avg_Rating' ordinal='2' />
+                  <column datatype='integer' name='Count' ordinal='3' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='high_rated_books_low_number_reviews' inline='true' name='federated.0zvkq2s0a3s1hy14mj5ad13vq20i' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='high_rated_books_low_number_reviews' name='textscan.0mwxkja14ihao31go7lv50pt70nf'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='high_rated_books_low_number_reviews.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0mwxkja14ihao31go7lv50pt70nf' name='high_rated_books_low_number_reviews.csv' table='[high_rated_books_low_number_reviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_title' ordinal='1' />
+            <column datatype='string' name='author' ordinal='2' />
+            <column datatype='integer' name='num_ratings' ordinal='3' />
+            <column datatype='real' name='average_rating' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0mwxkja14ihao31go7lv50pt70nf' name='high_rated_books_low_number_reviews.csv' table='[high_rated_books_low_number_reviews#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_title' ordinal='1' />
+            <column datatype='string' name='author' ordinal='2' />
+            <column datatype='integer' name='num_ratings' ordinal='3' />
+            <column datatype='real' name='average_rating' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>book_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[book_title]</local-name>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias>book_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_ratings]</local-name>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias>num_ratings</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_rating]</local-name>
+            <parent-name>[high_rated_books_low_number_reviews.csv]</parent-name>
+            <remote-alias>average_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='high_rated_books_low_number_reviews.csv' datatype='table' name='[__tableau_internal_object_id__].[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]' role='measure' type='quantitative' />
+      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+      <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+      <column caption='Book Title' datatype='string' name='[book_title]' role='dimension' type='nominal' />
+      <column caption='Num Ratings' datatype='integer' name='[num_ratings]' role='measure' type='quantitative' />
+      <column-instance column='[book_title]' derivation='None' name='[none:book_title:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_1c7lbo00obl0l513fyhql1rjf1on.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:41:54 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>high_rated_books_low_number_reviews.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>453</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>book_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[book_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>book_title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>high_rated_books_low_number_reviews.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>451</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>2</ordinal>
+              <family>high_rated_books_low_number_reviews.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>397</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_ratings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_ratings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_ratings</remote-alias>
+              <ordinal>3</ordinal>
+              <family>high_rated_books_low_number_reviews.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>69</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>high_rated_books_low_number_reviews.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:book_title:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;512 Ants on Sullivan Street&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Conquering Horse&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Crossing Hitler: The Man Who Put the Nazis on the Witness Stand&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Demented: A Short Horror Story Collection&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Devil Girls&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Discontents: New Queer Writers&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Heartbreak House &amp; Misalliance&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Inside the Bubble&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Lady with a Spear&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Life Song&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Life Themes: Spiritual Evolvement&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;One Dog Happy&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Part of Our Time: Some Ruins &amp; Monuments of the Thirties&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Project Terror&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Santa&apos;s Angels&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Secrets to Surrender&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Sunstruck&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Knight, Death and the Devil&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Koalemos Initiative&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Last Pharaoh: Mubarak and the Uncertain Future of Egypt in the Volatile Mid East&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;The Singularity is Coming: The Artificial Intelligence Explosion&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Twisted&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;على حين وطن - قصص قصيرة جدا&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;A Touch of Savagery&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Anne Frank House: A Museum With a Story&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Arana&apos;s Visitor&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;At Chrighton Abbey and Other Horror Stories&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Bikini Planet&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Dorothy Of Oz, Volume 2&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Drowning Lessons: Stories&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Easter Bunny&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Forward to Camelot&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Medusa&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Melville: A Biography&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Pieces of a Rainbow&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Savage Lies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Selected Writings&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Shadow Team GB&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Career Programmer: Guerilla Tactics for an Imperfect World&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Chilling Archives of Horror Comics, Vol. 3: Zombies&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Gold Warrior&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Rainbow Bridge: Bridge to Inner Peace and to World Peace&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;The Supernatural Omnibus- Being A Collection of Stories&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Waiting to Live&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Your Secrets Sleep With Me&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;დიდოსტატის კონსტანტინეს მარჯვენა; დიონისოს ღიმილი&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A Spy at Home&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;A Visual Guide to Gospel Events: Fascinating Insights into Where They Happened and Why&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Adapt and Plan for the New Abnormal of the COVID-19 Coronavirus Pandemic: Adapt and Plan for the New Abnormal of the COVID-19 Coronavirus Pandemic&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;As The Crow Flies&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Evil in a Mask&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Frontal Assault&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hellboy and the B.P.R.D.: 1952 \#1&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;How to Avoid Huge Ships&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Hunt for the Star&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Kepler Moon Alpha&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Lemur&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Morwyn&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Secret Deceptions&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Diary of Emily Dickinson&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Forgotten Man&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Millennial Reincarnations&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Oracle&apos;s Journal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;The Scent of Cinnamon&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Tim &amp; Tom: An American Comedy in Black and White&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Touchstone&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;White Flower Day&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;White Logic, White Methods: Racism and Methodology&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;東京ラブストーリー&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;A Newborn Business: Esports&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;All of the Rogers&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;An Ordinary Woman&apos;s Extraordinary Faith&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Beyond the Veil&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Blue Horse Dreaming&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Colonization&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Continuous Cables: An Exploration of Knitted Cabled Knots, Rings, Swirls, and Curlicues&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Forever, Christian&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;His Toy, His Dream, His Rest&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Moon of the Wolf&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Mummies!: Classic Monsters of Pre-Code Horror Comics&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Piecas dienas&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Representation and Reality&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Skull Full of Kisses&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Dark Chamber&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Hunted&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Night World and the Word Night&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Peace of the Spirit Within: A Guide to Transform Your Life&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Steps: 12 Secrets To Raising Happy and Successful Kids&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;The Virtuoso&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;Voices From Punktown&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;What the Koran Really Says: Language, Text, and Commentary&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Dreamers in Hell&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;High Wire: The Precarious Financial Lives of American Families&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Kumari: Goddess Of Gotham&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Late at Night&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Nina Schenk Gräfin von Stauffenberg: Ein Porträt&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Oneiromance&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Past, Present, and Promises&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Prince of Pain III&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Sarah Anne Hartford : Massachusetts, 1651&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Scars and Voices: And Other Stories&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Shaman Warrior, Vol. 6&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Skurðir í rigningu&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Soul Clap Hands and Sing&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Starlight Seduction&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Starved for Science: How Biotechnology Is Being Kept Out of Africa&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Genetic Lottery&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Nature of the Chemical Bond and the Structure of Molecules and Crystals; An Introduction to Modern Structural Chemistry.&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Selected Poems of Rosario Castellanos (Palbra Sur Book)&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Stalin School of Falsification&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Trial / America / The Castle / Metamorphosis / In the Penal Settlement / The Great Wall of China / Investigations of a Dog / Letter to His Father / The Diaries, 1910–23: Complete &amp; Unabridged&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;The Woman Who Would Be Pharaoh&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Titans, Humans, And The Beasts&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Who Would Jesus Kill?: War, Peace, and the Christian Tradition&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Firefighter in the Family&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Sunny Morning, A Comedy of Madrid&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;A Touch of Innocence&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Blessed Are You: Mother Teresa and the Beatitudes&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Churning Waters&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Deep Dream of the Rain Forest&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Exordium of Tears&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Exposition of the Divine Principle&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Heathcliff At Home&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Hillbilly Tales from the Smoky Mountains - And Other Homespun Remedies, Proverbs, and Poetry&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;How to Avoid Huge Ships: And Other Implausibly Titled Books&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Leading Hybrid and Remote Teams: A Manual on Benchmarking to Best Practices for Competitive Advantage&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Legacy of Honor&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;MILEY CYRUS: This Is Her Life&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Miley Mania! Behind the Scenes with Miley Cyrus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Slide, a Modern Satire on the Excess of Greed&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Celtic Book of Days: A Daily Guide to Celtic Spirituality and Wisdom&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Different Kinds Of Monsters: A Psychological and Supernatural Horror Novel&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Real Book of the Dead&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The revolution and the civil war in Spain,&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;The Years Distilled: Verses&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Vampires Today: The Truth about Modern Vampirism&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;ذاكرة معدن&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;A Beleaguered City: and Other Tales of the Seen and the Unseen&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;And Afterward, the Dark: Seven Tales&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Behind the State Capitol or Cincinnati Pike&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bloody Sunday: Massacre in Northern Ireland : The Eyewitness Accounts&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Bob Powell&apos;s Terror&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Confidential Communications&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Corduroy&apos;s Toys&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Darwinism Refuted: How the Theory of Evolution Breaks Down in the Light of Modern Science&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Exiles: A Memoir&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Home: A Hidden Tale - Sinister Tales&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Le Hussard sur le toit de Jean Giono (Lire aujourd&apos;hui)&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Omens&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Redstone&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Six Gothic Dramas (De Monfort / Orra / The Dream / The Family Legend / The Panthom / Whitchcraft&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Southern Mystical Moments&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Systematic Theology Vol 1: Ethics&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Horrors of Oakendale Abbey&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Shadow Of Ashlydyat&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Trouble with Playing Cupid&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;The Truth-Seeker’s Handbook: A Science-Based Guide&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Tippy the Knight&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;ان تمشي على يديك&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Against Pain&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Amatore&apos;s Restaurant&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Blackamoores: Africans in Tudor England, Their Presence, Status and Origins&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Blood Sport&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Book One: Sporadic Memories&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Captives&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Edward Or Jacob? Quick Quizzes For Fans Of The Twilight Saga&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Fated to Love You&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Firefly&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Hard Up, Ardon \#1&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;How Not to Murder Your Grumpy&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Jesus Our Eucharistic Love&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;L. Ron Hubbard Presents Writers of the Future 2&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Puritan&apos;s Empire: A Catholic Perspective on American History&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Temporary People&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Alliance&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Case of the Cosmological Killer: The Rendlesham Incident&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Eyes of the Beast&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;The Ringing Ear: Black Poets Lean South&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;User&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;What We Think We Become&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Word of Honor&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;كيف نكتب التاريخ الإسلامي&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;A Tale of the Other Kind&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Amaranth&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Between Earth and Sky: Our Intimate Connections to Trees&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Homesick: New and Selected Stories&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;I Slept with Slender Man&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Joseph&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Let My People Go: 15 текстів про українську революцію.&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Margaret and I&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Mus of Kerbridge&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;On Russian Music&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Orope - The White Snake&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Phaedra: A Novel of Ancient Athens&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Savage Wrongs&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Sophia&apos;s Journal&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Still Life&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Art and Science of Learning Languages&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Dead Writer&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Mystery of Revenge&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Pocket Guide to Mischief&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Shell of Sense&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;The Star Realm&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Ultimate Blogs: Masterworks from the Wild Web&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;A Whisper of Wings&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Adapting Eden&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Ailene&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Dreamhouse&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;From the Bottom of the Heap: The Autobiography of Black Panther Robert Hillary King&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Fruzzle&apos;s Mystery Talent: A Bed Time Fantasy Story for Children ages 3-10&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Kecksies and Other Twilight Tales&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;King of Spades&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Messages From Heaven&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Red Moon Rising&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Band of Gypsies&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Bleeding Horse, and Other Ghost Stories&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Bullet Collection&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Complete Tales from the Crypt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Door of the Unreal: A Classic Werewolf Novel&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Key to Nicholas Street&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Original Dr. Shade and Other Stories&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Scandal Plan: Or: How to Win the Presidency by Cheating on Your Wife&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;The Secret of Leifeng Pagoda&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Tilt&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Unapologetic Theology: A Christian Voice in a Pluralistic Conversation&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Valhalla&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;حول التأصيل الإسلامى للعلوم الاجتماعية&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Asylum: A Hidden Tale - Sinister Tales&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Becoming Drusilla: One Life, Two Friends, Three Genders&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Conversations with Kazuo Ishiguro&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Deadly Pretty Strangers: One dead body, one bereaved mother, one small favour ...&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Echo of a Curse&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Fengriffen: A Chilling Tale&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Forty Fathom Bank&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;GOOD BURGER 2 GO: NICKELODEON&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Happy Halloween&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Individuals: An Essay in Descriptive Metaphysics&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Loki&apos;s Price&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Nightmare Encyclopedia: Your Darkest Dreams Interpreted&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;REAL: THE LETTERS OF MINA HARKER AND SAM D&apos;ALLESANDRO&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Beginning&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Best Ghost Stories of H. Russell Wakefield&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Helmet&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Oxford History of Western Music: 6-Volume Set&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;The Piper&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Where There&apos;s Smoke&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;You Can Lead an Atheist to Evidence, But You Can&apos;t Make Him Think: Answers to Questions from Angry Skeptics&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Η καμένη βάτος&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;الصوت روح&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A Butler Christmas&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;A Time to Tell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Autres Temps... 1916&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Creeping Death from Neptune: Horror and Science Fiction Comics&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Discovering Pig Magic&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Feel Me&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;First Contact&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Great Tales of Terror from Europe and America: Gothic Stories of Horror and Romance 1765-1840&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Helping the Retarded to Know God&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;História de dois amores&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;If Shadows Could Tell: an Aurora Steller mystery novel&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Immortal&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;In Light of Shadows: More Gothic Tales by Izumi Kyoka&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Liliana&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Must a Jew Believe Anything?&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Night Shivers: The Ghost Stories of J.H. Riddell&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Song Bird: Matters of the Heart&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;The Toonies Invade Silicon Valley&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Valentine&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Where You Came From&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Zdarzenia na brygu Banbury&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Осколки неба или подлинная история The Beatles&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;A Choice of Kipling&apos;s Verse&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Angel Devil&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Clearly&apos;s Corruption&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Errol Flynn: The Untold Story&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Evolution of Insanity&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Knowing Jack&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Letters From Your Soul&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Licit and Illicit Drugs; The Consumers Union Report on Narcotics, Stimulants, Depressants, Inhalants, Hallucinogens and Marijuana-Including Caffeine, Nicotine and Alcohol&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Moment&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Moses: The Servant of God&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Oasis&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Prince of Pain IV&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Snow Day!: A Winter Tale (Ready-to-Read Pre-Level 1)&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Street Magic&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Captive&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Floating Bridge: Prose Poems&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Mind of the Master Class: History and Faith in the Southern Slaveholders&apos; Worldview&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Outcasts - A Thousand Dreams of Redemption&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;The Revenants&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Turning Idolater&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Wonders of the West&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Xorandor&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;A Murmur in the Trees&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;A Thousand Veils&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Boca de Luar&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Catapult Soul&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Chloe&apos;s Purpose&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Dragons Don&apos;t Dance Ballet&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Flor de obsessão: As 1000 melhores frases de Nelson Rodrigues&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;La Vampire&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;La vera storia dell&apos;ultimo re socialista&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Lesson II&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Love, Otto: The Legacy of Anne Frank&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Open Line&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Prince of Pain II&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Protecting America&apos;s Health: The FDA, Business, and One Hundred Years of Regulation&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Gateway&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Naomi Poems, Book One: Corpse and Beans&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Twelve Dancing Princesses: A Folk Tale from the Brothers Grimm&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The United Methodist Hymnal&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;The Widow of Ratchets&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;When I Go to Sleep&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Where&apos;s My Hug?&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Yes We Can: Barack Obama&apos;s History-Making Presidential Campaign&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;21 Distinctions of Wealth: Attract the Abundance You Deserve&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Broken Point&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Bully&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Crimson Rose&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Going Gray, Looking Great!: The Modern Woman&apos;s Guide to Unfading Glory&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;I Wish My Kids Had Cancer: A Family Surviving the Autism Epidemic&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Just Perfect&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Manfrone; Or, the One-Handed Monk&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Nachtmahr: Strange Tales&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Politics and Markets : The World&apos;s Political-Economic Systems&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Roots of To-Be Templars&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Beyond&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Coherence of Theism&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The DD Group: An Online Investigation Into the Death of Marilyn Monroe&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Dionysus Connection&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Kitten and His Prince&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Orphan of the Rhine&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Plea of Apollisian&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;The Sound of Suffering&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Togainu no Chi Volume 5&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Travelling in the Family: Selected Poems&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Verdammt. Verliebt.&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Why Not-World&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Adrift on the Haunted Seas: The Best Short Stories&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;And the Tide Turns&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Antigua: The Land of Fairies, Wizards and Heroes&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Artists in Exile: How Refugees from Twentieth-Century War and Revolution Transformed the American Performing Arts&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Avaland&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Baleful Beasts and Eerie Creatures&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Ben Israel: The Spiritual Odyssey of a Modern Man&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Evening Clouds&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Frege: Philosophy of Language&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Henry James: A Life in Letters&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;I Am Waltz&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;I Dream of Yellow Kites: What if it was all just a nightmare?&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Riders of Judgment&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Scooby-doo On Zombie Island&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Case of the Displaced Detective: At Speed&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Door in the Sky&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Guaymas Chronicles: La Mandadera&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Midnight Bell&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Sex Diaries: Why Women Go Off Sex and Other Bedroom Battles&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Sitting Swing: Finding Wisdom to Know the Difference&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;The Temple of Death: The Ghost Stories of A. C. &amp; R. H. Benson&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Vida extra&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Wildmen, Wobblies &amp; Whistle Punks: Stewart Holbrook&apos;s Lowbrow Northwest&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;A Biography of The Prophet of Islam , In the Light of the Original Sources An Analytical Study&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Atlas Loved&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Before We Are Born: Essentials of Embryology and Birth Defects&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Blood Thirst&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Breakaway: A Gail McCarthy Mystery&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Captivity&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Conjunction&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Cynric Ella&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Dogs in Lingerie&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Edges: O Israel, O Palestine&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Escher&apos;s Loops&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Everybody Knows This Is Nowhere&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Har någon sett mig någon annanstans?&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Heatwave and Crazy Birds&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Honey Paw and Lightfoot&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Leon the Lion&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Los Cuadernos del Destierro&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Making Contact With the Other Side: How to Enhance Your Own Psychic Powers&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Miracle Myx&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Tales Of The Grotesque: A Collection Of Uneasy Tales&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;The Tragedy of the Chinese Revolution&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Transfigurations: Collected Poems&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Why Men Don&apos;t Iron: The Fascinating and Unalterable Differences Between Men and Women&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Black Hole&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Celebutards: The Hollywood Hacks, Limousine Liberals, &amp; Pandering Politicians Who Are Destroying America&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Don&apos;t Hassel the Hoff: The Autobiography&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Finley’s Way&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Gray Hawk of Terrapin&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;I am Cyrus: The Story of the Real Prince of Persia&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;In Defense of Socialism: Four Speeches on the 30th Anniversary of the Cuban Revolution&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;In the Shadow of the Magic Mountain: The Erika and Klaus Mann Story&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Just Around The Bend: Más o Menos&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kangaroo&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Le Cycle d&apos;Elric&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Letters to a Devastated Christian&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Madita und Lisabet aus Birkenlund. Sonderausgabe. (Ab 6 J.).&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Mine&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Nextville: Amazing Places to Live the Rest of Your Life&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;O Avesso Das Coisas&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Pathogenesis&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Sense of Place and Sense of Planet: The Environmental Imagination of the Global&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Shakespeare: An Oxford Guide&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Algonquin Wits&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Hunt in the Forest&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;The Simon and Kirby Library: Horror&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;9/11 Contradictions: An Open Letter to Congress and the Press&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;A New World: An Epic of Colonial America&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Anthology of Australian Aboriginal Literature&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Arctic Fox: Life at the Top of the World&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Dakota Son&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Flaxman Low, Occult Psychologist, Collected Stories&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Gazing Into the Eternal&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Ghouls in My Grave&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Growing Citrus: The Essential Gardener&apos;s Guide&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Herodotus 7-9&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Lesson&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Secret Passages&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Sex-Pol: Essays 1929-1934&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Tales of the Astonishing Black Spark&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Collected Macabre Stories&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Future&apos;s So Bright I Can&apos;t Bear to Look&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The James Boys: A Novel Account of Four Desperate Brothers&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;The Word of God: Or, Holy Writ Rewritten&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Un Aquilone di Farfalle: Romanzo&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Undying&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;View Points and Points of View: A &apos;Phoetry Book&apos; from Cornwall&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;ചങ്ങമ്പുഴ കൃഷ്ണപിള്ള: നക്ഷത്രങ്ങളുടെ സ്‌നേഹഭാജനം | Changampuzha Krishnapilla: Nakshathrangalude Snehabhajanam&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;18 Platoon&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;365 Things Every Tea Lover Should Know&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;A Cowgirl Remembers When...&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;CEO-Stories: Children Employed by Owners&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Christmas in Heaven&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Don Camillo della Bassa: Gente così - Lo spumarino pallido&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Elementary Differential Equations with Boundary Value Problems&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Feminism and War: Confronting U.S. Imperialism&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;From Maid to Duchess&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Galaxy 666&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Happy as a Tapir&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Lucky Go Happy: Make Happiness Happen!&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;My Life&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Padre Pio&apos;s Words of Hope&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Sin is not a Four Letter Word&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Black Reaper&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Chronicles of the Virago--The Novus: Book I&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Cock and Anchor: Being a Chronicle of Old Dublin City&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Joss: A Reversion&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Occult Reich&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;The Time of Light&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Tom Sutton&apos;s Creepy Things&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Τα ποιήματα Β΄&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='high_rated_books_low_number_reviews.csv' id='high_rated_books_low_number_reviews.csv_3603D7D0EB4B429B83FFB19ACBD29328'>
+            <properties context=''>
+              <relation connection='textscan.0mwxkja14ihao31go7lv50pt70nf' name='high_rated_books_low_number_reviews.csv' table='[high_rated_books_low_number_reviews#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='book_title' ordinal='1' />
+                  <column datatype='string' name='author' ordinal='2' />
+                  <column datatype='integer' name='num_ratings' ordinal='3' />
+                  <column datatype='real' name='average_rating' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='highest_avg_rating' inline='true' name='federated.18c5xlk1lbunfr18mbzv414zgzzk' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='highest_avg_rating' name='textscan.15jy7dy0uic9uq10ua63t0oh938r'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='highest_avg_rating.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.15jy7dy0uic9uq10ua63t0oh938r' name='highest_avg_rating.csv' table='[highest_avg_rating#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.15jy7dy0uic9uq10ua63t0oh938r' name='highest_avg_rating.csv' table='[highest_avg_rating#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='F2' ordinal='1' />
+            <column datatype='real' name='F3' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[highest_avg_rating.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[highest_avg_rating.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_avg_rating.csv_9ED430AF0E0240299ADB13F156BC1127]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[highest_avg_rating.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_avg_rating.csv_9ED430AF0E0240299ADB13F156BC1127]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F3</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F3]</local-name>
+            <parent-name>[highest_avg_rating.csv]</parent-name>
+            <remote-alias>F3</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_avg_rating.csv_9ED430AF0E0240299ADB13F156BC1127]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='highest_avg_rating.csv' datatype='table' name='[__tableau_internal_object_id__].[highest_avg_rating.csv_9ED430AF0E0240299ADB13F156BC1127]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0q7yl2012hzf7318nvh7i0vrcmto.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:42:23 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>highest_avg_rating.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>14479</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>highest_avg_rating.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11992</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F3</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F3</remote-alias>
+              <ordinal>2</ordinal>
+              <family>highest_avg_rating.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>227</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='highest_avg_rating.csv' id='highest_avg_rating.csv_9ED430AF0E0240299ADB13F156BC1127'>
+            <properties context=''>
+              <relation connection='textscan.15jy7dy0uic9uq10ua63t0oh938r' name='highest_avg_rating.csv' table='[highest_avg_rating#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='F2' ordinal='1' />
+                  <column datatype='real' name='F3' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='highest_rated_books_5_stars' inline='true' name='federated.0h4dmbe19ixx2g10v3kbw0nvf46q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='highest_rated_books_5_stars' name='textscan.0x8hu2l0le70kt17kc5w00neiln6'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='highest_rated_books_5_stars.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0x8hu2l0le70kt17kc5w00neiln6' name='highest_rated_books_5_stars.csv' table='[highest_rated_books_5_stars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_title' ordinal='1' />
+            <column datatype='string' name='author' ordinal='2' />
+            <column datatype='integer' name='num_ratings' ordinal='3' />
+            <column datatype='real' name='average_rating' ordinal='4' />
+            <column datatype='integer' name='5_star_reviews' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0x8hu2l0le70kt17kc5w00neiln6' name='highest_rated_books_5_stars.csv' table='[highest_rated_books_5_stars#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='string' name='book_title' ordinal='1' />
+            <column datatype='string' name='author' ordinal='2' />
+            <column datatype='integer' name='num_ratings' ordinal='3' />
+            <column datatype='real' name='average_rating' ordinal='4' />
+            <column datatype='integer' name='5_star_reviews' ordinal='5' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>book_title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[book_title]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>book_title</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>author</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[author]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>author</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_ratings</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_ratings]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>num_ratings</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_rating]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>average_rating</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>5_star_reviews</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[5_star_reviews]</local-name>
+            <parent-name>[highest_rated_books_5_stars.csv]</parent-name>
+            <remote-alias>5_star_reviews</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='5 Star Reviews' datatype='integer' name='[5_star_reviews]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='highest_rated_books_5_stars.csv' datatype='table' name='[__tableau_internal_object_id__].[highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320]' role='measure' type='quantitative' />
+      <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+      <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+      <column caption='Book Title' datatype='string' name='[book_title]' role='dimension' type='nominal' />
+      <column caption='Num Ratings' datatype='integer' name='[num_ratings]' role='measure' type='quantitative' />
+      <column-instance column='[5_star_reviews]' derivation='Sum' name='[sum:5_star_reviews:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[num_ratings]' derivation='Sum' name='[sum:num_ratings:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0yhbt2q1lihgdw1dotctl1gew5h4.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:42:49 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13432</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>book_title</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[book_title]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>book_title</remote-alias>
+              <ordinal>1</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11155</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>author</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[author]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>author</remote-alias>
+              <ordinal>2</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3284</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_ratings</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_ratings]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_ratings</remote-alias>
+              <ordinal>3</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10015</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>average_rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[average_rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>average_rating</remote-alias>
+              <ordinal>4</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>206</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>5_star_reviews</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[5_star_reviews]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>5_star_reviews</remote-alias>
+              <ordinal>5</ordinal>
+              <family>highest_rated_books_5_stars.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6727</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:5_star_reviews:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:num_ratings:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='highest_rated_books_5_stars.csv' id='highest_rated_books_5_stars.csv_2E4CD4D1EFE844FABC1E07133EAE3320'>
+            <properties context=''>
+              <relation connection='textscan.0x8hu2l0le70kt17kc5w00neiln6' name='highest_rated_books_5_stars.csv' table='[highest_rated_books_5_stars#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='string' name='book_title' ordinal='1' />
+                  <column datatype='string' name='author' ordinal='2' />
+                  <column datatype='integer' name='num_ratings' ordinal='3' />
+                  <column datatype='real' name='average_rating' ordinal='4' />
+                  <column datatype='integer' name='5_star_reviews' ordinal='5' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='num_pages_avg_rating' inline='true' name='federated.15abaf00ncgurt15senm104vgcte' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='num_pages_avg_rating' name='textscan.1m4ro4f0a3i90k118q9n80qyftqe'>
+            <connection class='textscan' directory='/Users/pepdemartiolius/Documents/GitHub/Final-Project/DataFrames used for Tableau' filename='num_pages_avg_rating.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1m4ro4f0a3i90k118q9n80qyftqe' name='num_pages_avg_rating.csv' table='[num_pages_avg_rating#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Number of Pages' ordinal='1' />
+            <column datatype='real' name='Average Rating' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1m4ro4f0a3i90k118q9n80qyftqe' name='num_pages_avg_rating.csv' table='[num_pages_avg_rating#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='Number of Pages' ordinal='1' />
+            <column datatype='real' name='Average Rating' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[num_pages_avg_rating.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[num_pages_avg_rating.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Number of Pages</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Number of Pages]</local-name>
+            <parent-name>[num_pages_avg_rating.csv]</parent-name>
+            <remote-alias>Number of Pages</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Average Rating</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Average Rating]</local-name>
+            <parent-name>[num_pages_avg_rating.csv]</parent-name>
+            <remote-alias>Average Rating</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='num_pages_avg_rating.csv' datatype='table' name='[__tableau_internal_object_id__].[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='/var/folders/n6/6tdhcx8d7tq5v5rgh8bbvm8c0000gn/T/tableau-temp/#TableauTemp_0388zci0km2ac30zph65m0atxmx2.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/20/2024 09:43:09 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>num_pages_avg_rating.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1083</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Pages</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Number of Pages]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Pages</remote-alias>
+              <ordinal>1</ordinal>
+              <family>num_pages_avg_rating.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1083</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Average Rating</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Average Rating]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Average Rating</remote-alias>
+              <ordinal>2</ordinal>
+              <family>num_pages_avg_rating.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>699</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='num_pages_avg_rating.csv' id='num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420'>
+            <properties context=''>
+              <relation connection='textscan.1m4ro4f0a3i90k118q9n80qyftqe' name='num_pages_avg_rating.csv' table='[num_pages_avg_rating#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='Number of Pages' ordinal='1' />
+                  <column datatype='real' name='Average Rating' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Best Rated Authors (10 books or more)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='best_authors' name='federated.14zte2j0vvqm9x1amc8mn0xui8sj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14zte2j0vvqm9x1amc8mn0xui8sj'>
+            <column datatype='real' name='[Average_Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Average_Rating]' derivation='Sum' name='[sum:Average_Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[none:author:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Average_Rating])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:author:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[none:author:nk]' direction='DESC' using='[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[sum:Average_Rating:qk]' />
+          <slices>
+            <column>[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[none:author:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[sum:Average_Rating:qk]</rows>
+        <cols>[federated.14zte2j0vvqm9x1amc8mn0xui8sj].[none:author:nk]</cols>
+      </table>
+      <simple-id uuid='{5CFA7FF4-D894-404C-93F7-B30869DC0D4D}' />
+    </worksheet>
+    <worksheet name='Hoja 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Most Used Formats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='best_formats' name='federated.17n8d2b1db6ypy1e4p54l14cpwsx' />
+          </datasources>
+          <datasource-dependencies datasource='federated.17n8d2b1db6ypy1e4p54l14cpwsx'>
+            <column datatype='string' name='[book_format]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[count(book_format)]' role='measure' type='quantitative' />
+            <column-instance column='[book_format]' derivation='None' name='[none:book_format:nk]' pivot='key' type='nominal' />
+            <column-instance column='[count(book_format)]' derivation='Sum' name='[sum:count(book_format):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[sum:count(book_format):qk]' />
+              <color column='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[sum:count(book_format):qk]' />
+              <text column='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[none:book_format:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{68015F03-9EB0-4A24-857D-304B1EA46CF7}' />
+    </worksheet>
+    <worksheet name='Hoja 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Highest Rated Genres</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='best_genres_clean' name='federated.08eg31g1xh7kgc13bjqhf1t6ytwr' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08eg31g1xh7kgc13bjqhf1t6ytwr'>
+            <column caption='Avg Rating' datatype='real' name='[Avg_Rating]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
+            <column-instance column='[Genre]' derivation='None' name='[none:Genre:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Avg_Rating]' derivation='Sum' name='[sum:Avg_Rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[none:Genre:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Avg_Rating])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:Genre:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[none:Genre:nk]' direction='DESC' using='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' />
+          <slices>
+            <column>[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[none:Genre:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' />
+              <text column='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[none:Genre:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{BD7541F1-C4A7-444B-B88D-7B63BE038F64}' />
+    </worksheet>
+    <worksheet name='Hoja 4'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Highest Rated Books with few Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='high_rated_books_low_number_reviews' name='federated.0zvkq2s0a3s1hy14mj5ad13vq20i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvkq2s0a3s1hy14mj5ad13vq20i'>
+            <column-instance column='[average_rating]' derivation='Attribute' name='[attr:average_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+            <column caption='Book Title' datatype='string' name='[book_title]' role='dimension' type='nominal' />
+            <column-instance column='[book_title]' derivation='None' name='[none:book_title:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([average_rating])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:book_title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Los Cuadernos del Destierro&quot;</bucket>
+              <bucket>&quot;Hunt for the Star&quot;</bucket>
+              <bucket>&quot;CEO-Stories: Children Employed by Owners&quot;</bucket>
+              <bucket>&quot;Shadow Team GB&quot;</bucket>
+              <bucket>&quot;The Years Distilled: Verses&quot;</bucket>
+              <bucket>&quot;The Secret of Leifeng Pagoda&quot;</bucket>
+              <bucket>&quot;Avaland&quot;</bucket>
+              <bucket>&quot;Sunstruck&quot;</bucket>
+              <bucket>&quot;Dreamers in Hell&quot;</bucket>
+              <bucket>&quot;Fated to Love You&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[attr:average_rating:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[attr:average_rating:qk]</rows>
+        <cols>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]</cols>
+      </table>
+      <simple-id uuid='{8DA4F9AD-00B7-4CC0-AB31-1A04E38A142B}' />
+    </worksheet>
+    <worksheet name='Hoja 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Books With Highest Average Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='high_rated_books_low_number_reviews' name='federated.0zvkq2s0a3s1hy14mj5ad13vq20i' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0zvkq2s0a3s1hy14mj5ad13vq20i'>
+            <column-instance column='[average_rating]' derivation='Attribute' name='[attr:average_rating:qk]' pivot='key' type='quantitative' />
+            <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column caption='Average Rating' datatype='real' name='[average_rating]' role='measure' type='quantitative' />
+            <column caption='Book Title' datatype='string' name='[book_title]' role='dimension' type='nominal' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[book_title]' derivation='None' name='[none:book_title:nk]' pivot='key' type='nominal' />
+            <column-instance column='[average_rating]' derivation='Sum' name='[sum:average_rating:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:author:nk]'>
+            <groupfilter function='level-members' level='[none:author:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <manual-sort column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:author:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Rafael Cardenas&quot;</bucket>
+              <bucket>&quot;Michael Eastwood&quot;</bucket>
+              <bucket>&quot;Dane Richter&quot;</bucket>
+              <bucket>&quot;J.M. Johnson&quot;</bucket>
+              <bucket>&quot;Dennis Sharpe&quot;</bucket>
+              <bucket>&quot;Ruby Gupta&quot;</bucket>
+              <bucket>&quot;Amy Croucher Rose&quot;</bucket>
+              <bucket>&quot;Melissa Bellis&quot;</bucket>
+              <bucket>&quot;Janet E. Morris&quot;</bucket>
+              <bucket>&quot;Kayla  Cunningham&quot;</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([average_rating])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:book_title:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[sum:average_rating:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:author:nk]</column>
+            <column>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' value='96' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[attr:average_rating:qk]</rows>
+        <cols>([federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:author:nk] / [federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk])</cols>
+      </table>
+      <simple-id uuid='{62FACDDD-4648-4E79-A7D7-9CBF0644B883}' />
+    </worksheet>
+    <worksheet name='Hoja 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Books With the Most 5 Star Reviews</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='highest_rated_books_5_stars' name='federated.0h4dmbe19ixx2g10v3kbw0nvf46q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0h4dmbe19ixx2g10v3kbw0nvf46q'>
+            <column caption='5 Star Reviews' datatype='integer' name='[5_star_reviews]' role='measure' type='quantitative' />
+            <column caption='Author' datatype='string' name='[author]' role='dimension' type='nominal' />
+            <column caption='Book Title' datatype='string' name='[book_title]' role='dimension' type='nominal' />
+            <column-instance column='[author]' derivation='None' name='[none:author:nk]' pivot='key' type='nominal' />
+            <column-instance column='[book_title]' derivation='None' name='[none:book_title:nk]' pivot='key' type='nominal' />
+            <column caption='Num Ratings' datatype='integer' name='[num_ratings]' role='measure' type='quantitative' />
+            <column-instance column='[5_star_reviews]' derivation='Sum' name='[sum:5_star_reviews:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[num_ratings]' derivation='Sum' name='[sum:num_ratings:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:5_star_reviews:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:num_ratings:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:num_ratings:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[sum:5_star_reviews:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[none:book_title:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([num_ratings])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:book_title:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[none:book_title:nk]</column>
+            <column>[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[Multiple Values]</rows>
+        <cols>([federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[none:author:nk] / ([federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[none:book_title:nk] / [federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]))</cols>
+      </table>
+      <simple-id uuid='{CBE18128-6722-4A9B-A786-684D15E1357C}' />
+    </worksheet>
+    <worksheet name='Hoja 7'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Correlation Between Number of Pages and Average Rating</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='num_pages_avg_rating' name='federated.15abaf00ncgurt15senm104vgcte' />
+          </datasources>
+          <datasource-dependencies datasource='federated.15abaf00ncgurt15senm104vgcte'>
+            <column datatype='real' name='[Average Rating]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[F1]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Number of Pages]' role='measure' type='quantitative' />
+            <_.fcp.ObjectModelTableType.false...column caption='num_pages_avg_rating.csv' datatype='integer' name='[__tableau_internal_object_id__].[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]' role='measure' type='quantitative' />
+            <column-instance column='[__tableau_internal_object_id__].[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420:qk]' pivot='key' type='quantitative' />
+            <_.fcp.ObjectModelTableType.true...column caption='num_pages_avg_rating.csv' datatype='table' name='[__tableau_internal_object_id__].[num_pages_avg_rating.csv_59C80080DF684EB0B7CF1FB368210420]' role='measure' type='quantitative' />
+            <column-instance column='[Average Rating]' derivation='Attribute' name='[attr:Average Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Average Rating]' derivation='Sum' name='[sum:Average Rating:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Sum' name='[sum:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Number of Pages]' derivation='Sum' name='[sum:Number of Pages:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.15abaf00ncgurt15senm104vgcte].[:Measure Names]'>
+            <groupfilter function='level-members' level='[:Measure Names]' />
+          </filter>
+          <slices>
+            <column>[federated.15abaf00ncgurt15senm104vgcte].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.15abaf00ncgurt15senm104vgcte].[Multiple Values]</rows>
+        <cols>[federated.15abaf00ncgurt15senm104vgcte].[attr:Average Rating:qk]</cols>
+      </table>
+      <simple-id uuid='{B0BC29DA-AA29-41FF-A543-6C06A23580E4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size minheight='3560' minwidth='2920' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='53960' id='8' param='horz' type-v2='layout-flow' w='93188' x='6538' y='45815'>
+            <zone fixed-size='450' h='53960' id='6' is-fixed='true' type-v2='layout-basic' w='15411' x='6538' y='45815'>
+              <zone h='31832' id='12' name='Hoja 4' w='11065' x='6538' y='45815'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='53960' id='10' name='Hoja 3' w='4346' x='17603' y='45815'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='22128' id='5' name='Hoja 2' w='11065' x='6538' y='77647'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone h='53960' id='13' name='Hoja 5' w='75858' x='21949' y='45815'>
+              <layout-cache cell-count-w='10' non-cell-size-w='56' type-h='fixed' type-w='cell' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone fixed-size='56' h='53960' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='1918' x='97807' y='45815'>
+              <zone h='1826' id='9' name='Hoja 2' pane-specification-id='0' param='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[sum:count(book_format):qk]' type-v2='color' w='1918' x='97807' y='45815'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='1826' id='11' name='Hoja 3' pane-specification-id='0' param='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' type-v2='color' w='1918' x='97807' y='47641'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6349' id='14' name='Hoja 5' pane-specification-id='0' param='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' type-v2='color' w='1918' x='97807' y='49467'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='53960' id='23' param='vert' type-v2='layout-flow' w='6264' x='274' y='45815' />
+          <zone h='45590' id='3' name='Hoja 1' w='99452' x='274' y='225'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1650' minheight='1650' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='25' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='99550' id='24' param='vert' type-v2='layout-flow' w='99452' x='274' y='225'>
+                <zone fixed-size='280' h='45590' id='3' is-fixed='true' name='Hoja 1' w='99452' x='274' y='225'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='31832' id='12' is-fixed='true' name='Hoja 4' w='11065' x='6538' y='45815'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53960' id='10' is-fixed='true' name='Hoja 3' w='4346' x='17603' y='45815'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='1826' id='11' name='Hoja 3' pane-specification-id='0' param='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' type-v2='color' w='1918' x='97807' y='47641'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='53960' id='13' is-fixed='true' name='Hoja 5' w='75858' x='21949' y='45815'>
+                  <layout-cache cell-count-w='10' non-cell-size-w='56' type-h='fixed' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6349' id='14' name='Hoja 5' pane-specification-id='0' param='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' type-v2='color' w='1918' x='97807' y='49467'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='22128' id='5' is-fixed='true' name='Hoja 2' w='11065' x='6538' y='77647'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='1826' id='9' name='Hoja 2' pane-specification-id='0' param='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[sum:count(book_format):qk]' type-v2='color' w='1918' x='97807' y='45815'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{4402398E-7FC4-4BD7-915C-5C8D54488E18}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='156'>
+    <window class='worksheet' maximized='true' name='Hoja 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C50B7B99-8332-4966-830A-0AD2710712FE}' />
+    </window>
+    <window class='worksheet' name='Hoja 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.17n8d2b1db6ypy1e4p54l14cpwsx].[sum:count(book_format):qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C564DDD7-FACD-4FEA-A51E-CF5546DCB8F4}' />
+    </window>
+    <window class='worksheet' name='Hoja 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.08eg31g1xh7kgc13bjqhf1t6ytwr].[sum:Avg_Rating:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{136D4C83-E40B-4655-9296-89CFD10DA77D}' />
+    </window>
+    <window class='worksheet' name='Hoja 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{63D32072-4813-4C52-8F32-F7B5CF693FF8}' />
+    </window>
+    <window class='worksheet' name='Hoja 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0zvkq2s0a3s1hy14mj5ad13vq20i].[none:book_title:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CE8D21BE-3049-4029-A31E-AB4B70B4E5AB}' />
+    </window>
+    <window class='worksheet' name='Hoja 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0h4dmbe19ixx2g10v3kbw0nvf46q].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A851E8D5-746E-458B-A5A4-5048D05013AE}' />
+    </window>
+    <window class='worksheet' name='Hoja 7'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2DD149BF-0D65-4451-8339-52186A57426F}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Hoja 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 2' />
+        <viewpoint name='Hoja 3' />
+        <viewpoint name='Hoja 4'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Hoja 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{879AAC6B-8A2A-4E7C-888E-A87F6154B853}' />
+    </window>
+  </windows>
+</workbook>

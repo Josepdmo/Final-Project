@@ -63,3 +63,6 @@ FROM Books
 WHERE num_ratings > 300
 ORDER BY average_rating DESC;
 
+SELECT *
+from Books
+
