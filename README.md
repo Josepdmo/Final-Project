@@ -162,7 +162,7 @@ Promoting these popular genres through bestseller displays, recommendation lists
 
 ### 7. Correlation Between Number of Pages and Average Rating
 
-![Correlation between Number of Pages and Average Rating](https://path_to_your_image_here)
+![Correlation between Number of Pages and Average Rating](https://Users/pepdemartiolius/Documents/GitHub/Final-Project/Graphs Python/output.png)
 
 📐 **Insight:**
 The correlation analysis shows a moderate positive relationship (0.5313) between the number of pages and average rating. Books with a higher page count tend to receive better ratings, although this is not a strict rule.
