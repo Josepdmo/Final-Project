@@ -90,7 +90,7 @@ In this section, we delve directly into the analysis results gathered from our d
 
 ### 1. Books with the Highest Number of 5-Star Reviews
 
-![Top 10 Books with Most 5-Star Reviews](https://output.png)
+
 ![Most 5 Stars reviews](Graphs%20Python/Most%205%20Stars%20reviews.png)
 
 📚 **Insight:**
@@ -103,7 +103,7 @@ These findings suggest that these books are not only popular but also widely lov
 
 ### 2. Books with High Average Ratings but a Low Number of Reviews
 
-![Top 10 Books with Highest Average Rating (Low Number of Reviews)](https://path_to_your_image_here)
+![Books with High Average Ratings but a Low Number of Reviews](Graphs%20Python/Top%2010%20Books%20with%20Highest%20Average%20Rating%20%28Low%20Number%20of%20Reviews%29.png)
 
 📖 **Insight:**
 The analysis identifies several books with high average ratings but a relatively low number of reviews. These include *Los Cuadernos del Destierro* and *Hunt for the Star*, which have stellar ratings despite limited visibility.
@@ -115,7 +115,8 @@ For our bookstore, these hidden gems present an opportunity to introduce readers
 
 ### 3. Authors with More Than 10 Books Rated and High Average Ratings
 
-![Top 10 Authors with More Than 10 Books Rated and Average Rating >= 4](https://path_to_your_image_here)
+![Top 10 Authors with More Than 10 Books Rated and Average Rating >= 4](Graphs%20Python/Top%2010%20Authors%20with%20More%20Than%2010%20Books%20Rated%20and%20Average%20Rating%20%3E=%204.png)
+
 
 👩‍💻 **Insight:**
 Authors like Mò Xiāng Tóng Xiù and Tui T. Sutherland stand out with high average ratings across a significant number of books. These authors have consistently delivered quality content that resonates with readers.
@@ -127,7 +128,8 @@ Featuring collections or author-specific displays for these writers can attract 
 
 ### 4. Most In-Demand Book Formats
 
-![Most In-Demand Book Formats](https://path_to_your_image_here)
+![Most In-Demand Book Formats](Graphs%20Python/Most%20In-Demand%20Book%20Formats.png)
+
 
 📦 **Insight:**
 The most in-demand formats are Paperback, Hardcover, and Mass Market Paperback, followed by Kindle Edition and eBooks. These formats dominate the market and are preferred by a wide range of readers.
@@ -139,7 +141,9 @@ This information is crucial for inventory management. Ensuring that these popula
 
 ### 5. Genres Popular Among the Highest-Rated Books
 
-![Average Rating by Genre](https://path_to_your_image_here)
+![Average Rating by Genre](Graphs%20Python/Average%20Rating%20by%20Genre.png)
+
+
 
 🎨 **Insight:**
 Genres such as Adventure, Nonfiction, and Biography top the list of highest-rated categories. These genres consistently receive high average ratings from readers, indicating their strong appeal.
@@ -151,7 +155,8 @@ The bookstore can focus on curating a robust selection of titles within these hi
 
 ### 6. Genres with the Highest Number of Reviews
 
-![Top 10 Genres by Total Reviews](https://path_to_your_image_here)
+![Top 10 Genres by Total Reviews](Graphs%20Python/Top%2010%20Genres%20by%20Total%20Reviews.png)
+
 
 📊 **Insight:**
 Fiction, Fantasy, and Audiobook (though not a genre, it is classified as one by Goodreads) receive the highest number of reviews. These categories not only attract readers but also engage them enough to leave reviews.
@@ -163,7 +168,7 @@ Promoting these popular genres through bestseller displays, recommendation lists
 
 ### 7. Correlation Between Number of Pages and Average Rating
 
-![Correlation between Number of Pages and Average Rating](https://Users/pepdemartiolius/Documents/GitHub/Final-Project/Graphs Python/output.png)
+![Correlation between Number of Pages and Average Rating](Graphs%20Python/Correlation%20between%20Number%20of%20Pages%20and%20Average%20Rating.png)
 
 📐 **Insight:**
 The correlation analysis shows a moderate positive relationship (0.5313) between the number of pages and average rating. Books with a higher page count tend to receive better ratings, although this is not a strict rule.
@@ -175,7 +180,8 @@ For readers who appreciate in-depth stories, highlighting longer books with high
 
 ### 8. Books with the Highest Average Rating
 
-![Top 10 Books by Average Rating](https://path_to_your_image_here)
+![Top 10 Books by Average Rating](Graphs%20Python/Top%2010%20Books%20by%20Average%20Rating.png)
+
 
 🏆 **Insight:**
 The top 10 books with the highest average ratings include titles like *The Complete Aubrey/Maturin Novels* and *Mark of the Lion Trilogy*. These books are highly regarded by those who have read them, with ratings close to 5.
