@@ -1,0 +1,12 @@
+### Libraries and Versions
+
+- **Pandas**: v1.5.3
+- **ast**: Included in Python Standard Library
+- **Functions**: Custom module
+- **pymysql**: v1.0.2
+- **SQLAlchemy**: v1.4.39
+- **Matplotlib**: v3.5.1
+- **Seaborn**: v0.11.2
+- **dotenv**: v0.19.2
+- **os**: Included in Python Standard Library
+- **collections**: Included in Python Standard Library
